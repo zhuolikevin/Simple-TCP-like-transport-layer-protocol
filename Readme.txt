@@ -208,9 +208,7 @@ Average transmission speed (B/s):                  129.25
 NOTE: instant speed equals to Bytes transmitted in a segment over the time it cost(from first segment sent to finally successfully received). Average speed equals to Total transmitted bytes over total transmission time.
 
 ————————————————————————————————————————————————————————————————————————————————————————
-g. Bugs
 
-There is one problem found in the program. For the last segment of the file is not always as the Maximum Segment Size, but we still fill it with ‘’ to reach that size. Because if the receiver do not know the length of the data, it is unable to unpack the packet. This need the sender tell the receiver from former transmission. Due to time limited, I do not handle this yet. Just to let you know that you may find the file received a little bit larger than the original one.
 
 *****************************************************************************************
 Thanks for reading the README.txt. Because of time limited, quite a lot other essential functionalities I came up with (e.g. pipeline) can not be completed. And there is also possible to have some BUGs I haven’t found out. It needs the feedback from the user experiences. But I am sure there will be no big problems in the program.
